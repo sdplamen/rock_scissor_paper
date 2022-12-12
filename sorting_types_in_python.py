@@ -1,3 +1,28 @@
+# Python sort your list
+myList = [8, 10, 6, 2, 4]
+myList.sort()
+print(myList)
+
+# sort() method to sort elements 
+lst = [5, 3, 1, 2, 4]
+print(lst)
+lst.sort()
+print(lst) # outputs: [1, 2, 3, 4, 5]
+
+# reverse() method to reverse the list,
+lst = [5, 3, 1, 2, 4]
+print(lst)
+lst.reverse()
+print(lst) # outputs: [4, 2, 1, 3, 5]
+
+# Sorting a list
+myList = [8, 10, 6, 2, 4] # list to sort
+for i in range(len(myList) - 1): # we need (5 - 1) comparisons
+    if myList[i] > myList[i + 1]: # compare adjacent elements
+        myList[i], myList[i + 1] = myList[i + 1], myList[i] # if we end up here it means that we have to swap the elements
+
+myList = [8, 10, 6, 2, 4] # list to sort
+
 # Bubble sort in Python
 nums = []
 print(end="Enter the Size of List: ")
