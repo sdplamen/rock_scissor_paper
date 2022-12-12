@@ -1,0 +1,5 @@
+amount = int(unput('Type amount :'))
+interest = float(unput('Type interest :'))
+years = int(unput('Type years to pay :'))
+future_value = amount * ((1 + (0.01 * interest)) ** years)
+print(round(future_value, 2))
