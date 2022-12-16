@@ -1,5 +1,8 @@
-n = int(input('Your number ?'))
-if n % 2 == 0:
-    print('Your number is even.')
-else:
-    print('Your number is odd.')
+def even(n):
+    if n % 2 == 0:
+        return 'Your number is even.'
+    else:
+        return 'Your number is odd.'
+    print(n)
+n = int(input('Your number :'))
+even(n)
