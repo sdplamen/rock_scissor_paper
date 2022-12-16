@@ -8,5 +8,4 @@ fDate = datetime.strptime(fDate, '%Y/%m/%d')
 sDate = datetime.strptime(sDate, '%Y/%m/%d')
 
 delta = sDate - fDate
-print('# 9')
 print('The difference between your first and second date is', delta, 'days')
