@@ -1,11 +1,6 @@
-import calendar, datetime
-
-# To take month and year input from the user
+def calendar(yy, mm):
+    import calendar, datetime
+    print(calendar.month(yy, mm))
 yy = int(input("Enter year: "))
 mm = int(input("Enter month: "))
-
-# display the calendar
-print(calendar.month(yy, mm))
-
-current_dt = datetime.datetime.now()
-print('The Current Date and Time is: ', current_dt)
+calendar(yy, mm)
