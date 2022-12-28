@@ -1,8 +1,10 @@
 # show float number of some percetage
-a = float(input('Please type a number: '))
+def calc(perc):
+    perc = a * b / 100
+    print('That\'s your number', a,'\n\tand that\'s its percentage', round(perc, 2), '\n\t\tYour bill is:', round(a + perc, 2))
+a = int(input('Please type a number: '))
 b = float(input('Please type a percentage you want for this number: '))
-perc = a * b / 100
-print('That\'s your number', a,'\n\tand that\'s its percentage', round(perc, 2), '\n\t\tYour bill is:', round(a + perc, 2))
+calc(perc)
 
 # Import math library
 import math
