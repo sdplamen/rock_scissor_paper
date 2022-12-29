@@ -1,10 +1,11 @@
 def pase(parse):
     try:
-        print('Your is integer : ', end = '')
+        print('Your integer ', end = '')
         return int(parse)
     except ValueError:
         print('is float : ', end = '')
         return float(parse)
+        
     # if len(parse) == '.':
     #    print('Your is float :', parse)
     # else:
