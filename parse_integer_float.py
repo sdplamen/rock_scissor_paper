@@ -3,7 +3,7 @@ def pase(parse):
         print('Your is integer : ', end = '')
         return int(parse)
     except ValueError:
-        print('Your is float : ', end = '')
+        print('is float : ', end = '')
         return float(parse)
     # if len(parse) == '.':
     #    print('Your is float :', parse)
