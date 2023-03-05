@@ -1,13 +1,13 @@
+// first manner
 const prices = [99, 129, 149];
 const discount = 0.1;
-
 function applyDiscount(prices, discount) {
  for (let i = 0; i < prices.length; i++) {
   console.log(prices[i] * discount);
  }
 }
 applyDiscount(prices, discount);
-
+// second manner
 const receipt = [5.99, 6.79, 3.89, 9.99, 2.50];
 const applyDiscount = (total) => total * 0.9;
 const total = (pricesArray) => {
