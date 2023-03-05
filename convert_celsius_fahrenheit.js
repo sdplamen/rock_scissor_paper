@@ -9,3 +9,11 @@ console.log(fahrenheitToCelsius + " degrees Celsius");
 console.log("----");
 console.log(celsius + " degrees celsius are:");
 console.log(celsiusToFahrenheit + " degrees fahrenheit");
+// with array
+const fahrenheit = [72, 68, 70, 74, 77, 75, 79];
+const celsius = [];
+for (const element of ) {
+ let c = (element - 32) * (5/9);
+ celsius.push(c);
+}
+console.log(celsius);
