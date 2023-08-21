@@ -24,4 +24,4 @@ def lcm(a, b):
     return (a / gcd(a, b)) * b
 a = int(input('type a digit for GCD: '))
 b = int(input('type a digit for GCD: '))
-print('LCM of', a, 'and', b, 'is', lcm(a, b)))
+print('LCM of', a, 'and', b, 'is', lcm(a, b))
