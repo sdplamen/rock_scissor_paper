@@ -1,5 +1,4 @@
-# Amicable pairs (a, b) are integers where the sum of the proper divisors of a is equal to  the sum of the proper divisors of b
-
+# Amicable pairs (a, b) are integers where the sum of the proper divisors of a is equal to the sum of the proper divisors of b
 # In number theory, proper divisors of a positive integer are the positive integers that divide into that number evenly (without leaving a remainder) but exclude the number itself.
 
 def sum_proper_division(n):
