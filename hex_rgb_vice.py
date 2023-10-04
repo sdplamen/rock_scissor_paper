@@ -3,7 +3,7 @@ def rgb_to_hex(r, g, b):
 
 print('HEX value for your', rgb_to_hex(255, 165, 1))
 
-# ======
+# === === === === ===
 
 def hex_to_rgb(ip):
     return tuple(int(ip[i:i+2],16) for i in (0, 2, 4))
