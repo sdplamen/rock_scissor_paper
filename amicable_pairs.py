@@ -1,5 +1,4 @@
-# Amicable pairs (a, b) are integers where the sum of the proper divisors of a is equal to the sum of the proper divisors of b
-# In number theory, proper divisors of a positive integer are the positive integers that divide into that number evenly (without leaving a remainder) but exclude the number itself.
+print('Amicable pairs a and b are integers where the sum of the proper divisors of a is equal to the sum of the proper divisors of b and vice versa. The proper divisors of a are the positive integers that divide into a evenly (without leaving a remainder) but exclude the number itself.')
 
 def sum_proper_division(n):
     division_sum = 1
@@ -11,6 +10,7 @@ def sum_proper_division(n):
             if i != n // i:
                 division_sum += n // i
     return division_sum
+
 def find_amicable_pairs(limit):
     amicable_pairs = []
     for a in range(2, limit):
@@ -20,7 +20,9 @@ def find_amicable_pairs(limit):
             amicable_pairs.append(pair)
     return amicable_pairs
 
-limit = 5000
-amicable_pairs = find_amicable_pairs(limit)
-for pair in amicable_pairs:
-    print(pair)
+limit = int(input('Enter the limit for amicable numbers : '))
+amicable_num = []
+for pair in find_amicable_pairs(limit):
+    amicable_num.append(pair)
+
+print(f'That\'s all amicable numbers in range of {limit} is {amicable_num}')
