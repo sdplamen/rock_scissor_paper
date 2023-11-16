@@ -1,8 +1,0 @@
-message = 'There can keep a secret, if two of them are dead'
-translared = ''
-i = len(message) - 1
-while i >= 0:
-    translared = translared + message[i]
-    print('i is', i, ', message[i] is', message[i], ', translated is', translared)
-    i = i - 1
-print(translared)
