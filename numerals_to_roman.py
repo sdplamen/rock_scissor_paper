@@ -39,7 +39,7 @@ roman_to_dec(num)
 # convert roman numbers to numerals
 
 int_value = 0
-user_input = input("Enter Roman Number: ").upper()
+romanUser = input("Enter Roman Number: ").upper()
 
 roman = {
     'M': 1000,
@@ -57,32 +57,17 @@ roman = {
     'I': 1
 }
 
-for i in range(len(user_input)):
-    if user_input[i] in roman:
-        if i + 1 < len(user_input) and roman[user_input[i]] < roman[user_input[i + 1]]:
-            int_value -= roman[user_input[i]]
+for i in range(len(romanUser)):
+    if romanUser[i] in roman:
+        if i + 1 < len(romanUser) and roman[romanUser[i]] < roman[romanUser[i + 1]]:
+            int_value -= roman[romanUser[i]]
         else:
-            int_value += roman[user_input[i]]
-            print("The integer value of this roman is : ", int_value)
+            int_value += roman[romanUser[i]]  
     else:
         print("Invalid input.")
+print("The integer value of this roman is : ", int_value)
 
 '''if __name__ == '__main__':
     tests = ['I', 'V', 'VII', 'IX', 'X', 'MCMVII', 'CM', 'MCXCIX']
     for i in tests:
         print(f'{i} = {roman(i)}')'''
-
-# Every natural number N lies between two consecutive powers of 2
-n = int(input('Enter a number : '))
-lower, upper = 0, 0
-for x in range(n):
-    p = 2 ** x
-    if p <= n:
-        lower = p
-    elif p >= n:
-        upper = p
-        break
-    if lower == upper:
-        print(n, 'is a power of 2')
-    else:
-        print(n, 'lies between', lower, 'and', upper)
