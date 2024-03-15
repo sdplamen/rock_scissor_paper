@@ -14,9 +14,9 @@ def get_factors(number):
   return factors
 def check_prime(number, factors):
   if len(factors) == 2:
-    print(f'{number} is a prime number')
-  else:
     print(f'{number} is not a prime number')
+  else:
+    print(f'{number} isa prime number')
 def analyze_number(number):
   check_odd_even(number)
   factors = get_factors(number)
